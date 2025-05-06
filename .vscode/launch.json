@@ -1,0 +1,26 @@
+// [info] auto config:
+
+// found:
+//   rootPath: /Users/hongildong/repository/test-project // 해당 프로젝트 경로
+//   jestCommandLine: npm test
+
+// [info] auto config debug config:
+{
+  "type": "node",
+  "name": "vscode-jest-tests.v2",
+  "request": "launch",
+  "args": [
+    "test",
+    "--runInBand",
+    "--watchAll=false",
+    "--testNamePattern",
+    "${jest.testNamePattern}",
+    "--runTestsByPath",
+    "${jest.testFile}"
+  ],
+  "cwd": "/Users/smd99/codeit-jest/__tests__", // 해당 프로젝트 경로
+  "console": "integratedTerminal",
+  "internalConsoleOptions": "neverOpen",
+  "disableOptimisticBPs": true,
+  "runtimeExecutable": "npm"
+}
